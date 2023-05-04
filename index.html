@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/reset.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Hangman - Game</title>
+</head>
+
+<body>
+
+    <section class="section-1" style="display: block;" id="section-1">
+        <div class="container">
+
+            <div>
+                <div class="hangman-text">
+                    <p>The</p>
+                    <p style="margin-left: 15px;">Hangman</p>
+                </div>
+
+                <div>
+                    <button class="play-btn" id="play-btn">Play Game</button>
+                </div>
+            </div>
+
+
+            <div class="hangman-img">
+                <img src="./assets/img/rope.svg" class="rope">
+                <img src="./assets/img/stickman.svg" class="stickman">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-2" id="section-2" style="display: none;">
+
+        <div class="head">
+            <p class="head-hangman"><span class="the-hangman">The</span> Hangman</p>
+            <p class="score">Score: <span id="myScore">0</span></p>
+        </div>
+
+        
+        <div class="hangman-div">
+            <div class="hangman-container">
+                <img src="./assets/img/hang.svg" class="hang">
+                <img src="./assets/img/hangman-head.svg" class="hangman-head" id="hangman" style="display: none;">
+                <img src="./assets/img/hangman-body.svg" class="body-hangman" id="hangman" style="display: none;">
+                <img src="./assets/img/hangman-leftarm.svg" class="leftarm-hangman" id="hangman" style="display: none;">
+                <img src="./assets/img/hangman-rightarm.svg" class="rightarm-hangman" id="hangman" style="display: none;">
+                <img src="./assets/img/hangman-leftfoot.svg" class="leftfoot-hangman" id="hangman" style="display: none;">
+                <img src="./assets/img/hangman-rightfoot.svg" class="rightfoot-hangman" id="hangman" style="display: none;">
+            </div>
+    
+            <div class="contain-input">
+                <p class="guess-word">Guees the Word <span style='font-size:30px;'>&#129313;</span></p>
+                <input type="text" class="guess-input" id="guess-input"  disabled>
+            </div>
+            
+        </div>
+
+     
+
+    </section>
+
+    <section class="section-3" id="section-3" style="display: none;">
+    
+        <div class="game-over">
+            <p>Game Over</p>
+            <p>Your Score</p>
+            <span id="resultScore">100</span>
+        </div>
+
+        <div class="hangman-over">
+            <img src="./assets/img/rope.svg" class="over-rope">
+            <img src="./assets/img/stickman.svg" class="over-stickman">
+        </div>
+
+        <div class="try-contain">
+            <button class="try-btn" id="try-btn">Try Again</button>
+        </div>
+
+    
+    </section>
+
+
+
+    <audio id="myMusic" src="./assets/music/gamemusic.mp3" style="visibility: hidden;"></audio>
+
+
+    <script src="./assets/js/game.js"></script>
+</body>
+
+</html>
+
+

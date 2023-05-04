@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+
+    font-family: "Roboto", sans-serif;
+}
+
+.section-1 {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 229, 168, 1) 0%, rgba(251, 174, 222, 1) 100.7%);
+    height: 100vh;
+}
+
+.hangman-text {
+    margin: 80px 0 100px 0;
+}
+
+.hangman-text :first-child {
+    font-size: 120px;
+    color: #19A7CE;
+    font-weight: 800;
+}
+
+.hangman-text :nth-child(2) {
+    font-size: 120px;
+    color: #FF6D60;
+    font-weight: 800;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.play-btn {
+    background-color: #9D27B0;
+    color: #FFE0B2;
+    font-size: 46px;
+    border: 6px #000000 solid;
+    width: 300px;
+    height: 80px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.7s ease;
+    margin-left: 15px;
+}
+
+.play-btn:hover {
+    background-color: transparent;
+    color: #9D27B0;
+    font-weight: 600;
+}
+
+.hangman-img {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.hangman-img:hover {
+    scale: 1.1;
+}
+
+.rope {
+    position: absolute;
+    right: 60px;
+    width: 40px;
+}
+
+.stickman {
+    width: 240px;
+    position: absolute;
+    right: -40px;
+    top: 240px;
+}
+
+.section-2 {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(90, 92, 106, 1) 0%, rgba(32, 45, 58, 1) 81.3%);
+    height: 100vh;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.the-hangman {
+    font-size: 120px;
+    color: #19A7CE;
+    font-weight: 800;
+}
+
+.head-hangman {
+    font-size: 120px;
+    color: #FF6D60;
+    font-weight: 800;
+}
+
+.hang {
+    width: 200px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.hangman-head {
+    width: 120px;
+    position: absolute;
+    left: 225px;
+    top: 210px;
+}
+
+.body-hangman {
+    width: 120px;
+    position: absolute;
+    left: 225px;
+    top: 294px;
+}
+
+.leftarm-hangman {
+    width: 50px;
+    position: absolute;
+    left: 200px;
+    top: 283px;
+    rotate: 15deg;
+}
+
+.rightarm-hangman {
+    width: 50px;
+    position: absolute;
+    left: 325px;
+    top: 283px;
+    rotate: -15deg;
+}
+
+.leftfoot-hangman {
+    width: 45px;
+    position: absolute;
+    left: 222px;
+    top: 340px;
+}
+
+.rightfoot-hangman {
+    width: 45px;
+    position: absolute;
+    left: 305px;
+    top: 345px;
+}
+
+.hangman-container {
+    position: relative;
+}
+
+.hangman-div {
+    display: flex;
+    align-items: center;
+}
+
+.contain-input {
+    margin-left: 300px;
+    margin-top: 120px;
+}
+
+.guess-word {
+    margin: auto;
+    font-size: 30px;
+    font-weight: 500;
+    color: #F0F0F0;
+    padding-bottom: 50px;
+}
+
+.guess-input {
+    margin: auto;
+    width: 350px;
+    height: 40px;
+    margin-left: 10px;
+    letter-spacing: 15px;
+    font-size: 34px;
+    color: whitesmoke;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.section-3 {
+    background-image: radial-gradient(circle 815px at 23.4% -21.8%, rgba(9, 29, 85, 1) 0.2%, rgba(0, 0, 0, 1) 100.2%);
+    height: 100vh;
+}
+
+.game-over {
+    text-align: center;
+}
+
+.game-over :first-child {
+    color: #FC2947;
+    font-size: 84px;
+    font-weight: 600;
+    padding: 60px 0;
+}
+
+.game-over :nth-child(2) {
+    color: #7AA874;
+    font-size: 62px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.game-over :nth-child(3) {
+    color: #F0F0F0;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.hangman-over {
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.hangman-over:hover {
+    scale: 0.9;
+}
+
+.over-rope {
+    position: absolute;
+    bottom: -30px;
+    left: 160px;
+    width: 70px;
+}
+
+.over-stickman {
+    position: absolute;
+    width: 200px;
+    top: -85px;
+    left: 100px;
+}
+
+.score {
+    color: #7AA874;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.try-contain{
+    width: 100vw;
+    display: flex;
+}
+
+.try-btn{
+    margin: 50px auto;
+    background-color: #9D27B0;
+    color: #FFE0B2;
+    font-size: 46px;
+    border: 12px #000000 solid;
+    width: 300px;
+    height: 80px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.7s ease;
+    border-radius: 22px;
+}
+
+.try-btn:hover {
+    background-color: transparent;
+    color: #9D27B0;
+    font-weight: 600;
+}
